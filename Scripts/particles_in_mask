@@ -1,9 +1,0 @@
-particles_in_mask = []
-for i in nparticles:
-    if i is not org_particle:
-        if i.position[0] > temp_particle.position[0] - diameter and i.position[0] < temp_particle.position[0] + diameter and i.position[1] > temp_particle.position[1] - diameter and i.position[1] < temp_particle.position[1] + diameter:
-            particles_in_mask.append(i)
-for j in particles_in_mask:
-    if overlaps(temp_particle,j) is True:
-        x = True
-        break
